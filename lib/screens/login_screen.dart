@@ -2,6 +2,9 @@ import 'dart:html';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+//import 'package:flutter/widgets.dart';
+import 'package:testproject/screens/home_screen.dart';
+import 'package:testproject/screens/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget{
   const LoginScreen ({ Key? key }) : super(key: key);
@@ -69,9 +72,11 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
           minWidth: MediaQuery.of(context).size.width,
                   
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          },
           child: Text(
-            "Login",
+            "Acceder",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold)),
@@ -114,11 +119,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text("¿No tienes una cuenta? Registrate!"),
+                        Text("¿No tienes una cuenta? "),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context) =>
+                            RegistrationScreen()));
+                          },
                           child: Text(
-                            "SignUp",
+                            "Registrate!",
                             style: TextStyle(
                               color: Colors.purpleAccent,
                               fontWeight: FontWeight.bold,
