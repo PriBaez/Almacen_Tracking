@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "808358541507",
+    "project_id": "trackapp-cb375",
+    "storage_bucket": "trackapp-cb375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808358541507:android:6d56dbddab483a6def4a76",
+        "android_client_info": {
+          "package_name": "com.example.testproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808358541507-n5qjlrmu97q9d22ooluoa0mpvicuk1st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6TGj6UV2hnb5FaayG0H3zXwDga_RO7yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808358541507-n5qjlrmu97q9d22ooluoa0mpvicuk1st.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808358541507-nejdf8k5q9be5vkq0gggs3tq8om2j9d4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testproject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
